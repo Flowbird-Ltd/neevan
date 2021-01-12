@@ -44,3 +44,13 @@ class RingdeskSettings(models.TransientModel):
     def is_oauth_enabled(self):
         ICPSudo = self.env['ir.config_parameter'].sudo()
         return ICPSudo.get_param('ringdesk.ringdesk_oauth_enable')
+        
+    @api.model
+    def remove_space_old_data(self, *args):
+        contacts = self.env['res.partner'].search([])
+        for contact in contacts:
+            if contact.mobile:
+                contact.write({'mobile':( contact.mobile.replace(' ', ''))});
+            if contact.phone:
+                contact.write({'phone': (contact.phone.replace(' ', ''))});
+            

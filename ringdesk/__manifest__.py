@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Ringdesk For Swyx, 3CX, Xelion, BroadSoft',
-    "summary": "Integrate your swxyit, 3CX, Xelion, BroadSoft and many more with in your odoo crm",
-    'version': '1.0',
+    'name': 'Phone integration for Swyx, 3CX, Xelion, BroadSoft',
+    "summary": "Integrate your Swyx, 3CX, Xelion, BroadSoft and many more with in your ODOO crm",
+    'version': '1.1',
     'category': 'web',
     "description": """
         This modules helps you to have telephony in ODOO, add Call Details in ODOO and attach to related contact or leads
@@ -11,7 +11,10 @@
     'maintainer': 'Ringdesk B.V.',
     'website': 'https://ringdesk.com',
     'depends': [
-        'web','contacts','crm'
+        'base', 
+        'web',
+        'contacts',
+        'crm'
     ],
     'data': [
         'views/template.xml',

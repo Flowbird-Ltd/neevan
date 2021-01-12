@@ -238,7 +238,7 @@ let general = {
            if(val<10) return '0' + val.toString();
            return val;
        }
-       return  `${startTime.getFullYear()}-${appendZero(startTime.getMonth())}-${appendZero(startTime.getDate())} ${appendZero(startTime.getHours())}:${appendZero(startTime.getMinutes())}:${appendZero(startTime.getSeconds())}`
+       return  `${startTime.getFullYear()}-${appendZero(startTime.getMonth()+1)}-${appendZero(startTime.getDate())} ${appendZero(startTime.getHours())}:${appendZero(startTime.getMinutes())}:${appendZero(startTime.getSeconds())}`
     },
     get_duration:(startDateTime, connectedDateTime, endDateTime)=> {
         let StartDateTime= startDateTime? new Date(startDateTime): new Date();

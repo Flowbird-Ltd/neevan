@@ -33,7 +33,9 @@ var RingdeskWidget = Widget.extend({
     }
 });
 
+if (session.is_system) {    
+    
+}
 SystrayMenu.Items.push(RingdeskWidget);
-
 return RingdeskWidget;
 });

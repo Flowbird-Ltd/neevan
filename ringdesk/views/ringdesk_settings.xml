@@ -9,7 +9,7 @@
         <field name="arch" type="xml">
             <xpath expr="//div[hasclass('settings')]" position="inside">
                 <div class="app_settings_block" data-string="Ringdesk" string="Ringdesk" data-key="ringdesk">
-                     <h2>Ringdesk Oauth Settings</h2>
+                    <h2>Ringdesk Oauth Settings</h2>
                     <div class="row mt16 o_settings_container">
                         <div class="col-12 col-lg-6 o_setting_box" id="ringdesk"
                             title="Enables/Disables Oauth Login">
@@ -43,6 +43,13 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+					<h2>Remove Space</h2>
+                    <div class="row mt16 o_settings_container">
+					<button name="remove_space_old_data" string="Remove Space Old Data"
+                        type="object"
+                        class="oe_highlight"
+                        />
                     </div>
                 </div>
             </xpath>
