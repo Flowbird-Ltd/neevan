@@ -36,6 +36,8 @@ var RingdeskWidget = Widget.extend({
 if (session.is_system) {    
     
 }
-SystrayMenu.Items.push(RingdeskWidget);
+if(window.location.href.indexOf("model=sign.template") <= -1){
+    SystrayMenu.Items.push(RingdeskWidget);
+}
 return RingdeskWidget;
 });
